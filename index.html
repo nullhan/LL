@@ -1,0 +1,110 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="title"></title>
+<link rel="stylesheet" href="css/index.css">
+
+<script type="text/javascript"	src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+	window.onload=function(){
+var d = new Date()
+var time = d.getHours()
+if (time < 24)
+{
+document.getElementById("title").innerHTML="Good evening!";
+}
+if (time < 19)
+{
+document.getElementById("title").innerHTML="Good afternoon!";
+}
+if (time < 12)
+{
+document.getElementById("title").innerHTML="Good morning!";
+}
+if (time < 5)
+{
+document.getElementById("title").innerHTML="Go to sleep!";
+}
+			
+
+			
+}
+</script>
+</head>
+<style></style>
+<body >
+
+  <div id="content">
+<p><br/></p></div>
+
+<div class="search_part">
+  <a class="logo" href="history//">
+  
+  </a>
+
+<br/>
+
+<form onsubmit="return search()" class="search_bar">
+	<input type="submit" id="search_submit" value="🔄" >
+		<span><i id="clear" onclick="clear_seach()"></i>
+			<div class="si">
+				<input class="search" type="text" value="" onkeyup="get_suggest()" onfocus="get_suggest()" onpaste="get_suggest()" autocomplete="off" id="search_input" placeholder="(๑•̀ㅂ•́)و✧" >
+			</div>
+		</span>
+
+	<div id="suggest" style="display:none">
+		<ul id="suglist"></ul>
+			<div class="close" onclick="close_sug()">⬆收起⬆</div>
+	</div>
+</form>
+</div>
+
+<br/>
+
+<div class="box">
+	<a href="https://wx.qq.com/"></a>
+	<p><img class="icon" src="https://s2.ax1x.com/2019/06/26/Zmik5Q.png" ></p>
+	<p class="url"></p>
+</div>
+
+<div class="box">
+	<a href="http://blog.sina.com.cn/"></a>
+	<p><img class="icon" src="https://s2.ax1x.com/2019/06/26/ZmPJnf.png" ></p>
+	<p class="url"></p>
+</div>
+
+<div class="box">
+	<a href="https://pan.baidu.com/"></a>
+	<p><img class="icon" src="https://s2.ax1x.com/2019/06/26/Zem1WF.png" ></p>
+	<p class="url"></p>
+</div>
+
+<div class="box">
+	<a href="https://www.bilibili.com/"></a>
+	<p><img class="icon" src="https://s2.ax1x.com/2019/06/26/ZemlJU.png" ></p>
+	<p class="url"></p>
+</div>
+
+<div class="box">
+	<a href="https://www.qqmusic.com/"></a>
+	<p><img class="icon" src="https://s2.ax1x.com/2019/06/26/ZmCFL8.png" ></p>
+	<p class="url"></p>
+</div>
+
+<div class="box">
+	<a href="https://music.163.com/"></a>
+	<p><img class="icon" src="https://s2.ax1x.com/2019/06/26/ZmiGG9.png" ></p>
+	<p class="url"></p>
+</div>
+
+<div class="box">
+	<a href="http://jiaowu.appweb.hebust.edu.cn/kdjw.html"></a>
+	<p><img class="icon" src="https://s2.ax1x.com/2019/06/26/ZmuDmj.png" ></p>
+	<p class="url"></p>
+</div>
+
+</body>
+</html>
